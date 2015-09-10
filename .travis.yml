@@ -2,6 +2,7 @@ sudo: required
 branches:
   only:
   - v1.9.2
+  - master
 
   services:
   - docker
@@ -15,4 +16,3 @@ branches:
   - docker build -t test_weldpua2008/centos6 /centos/6
   # Run tests on CentOS6
   - docker build -t test_weldpua2008/centos6 /centos/6
-  
