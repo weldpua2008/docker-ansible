@@ -50,16 +50,8 @@ RUN echo "===> Update cache..."		  && \
     mkdir -p /etc/ansible                          && \
     echo '[local]\nlocalhost\n' > /etc/ansible/hosts
 
-# Environment for systemd
-ENV container=docker
-
 # default command: display Ansible version
 #CMD [ "ansible-playbook", "--version" ]
 
-# Volumes for systemd
-VOLUME ["/run", "/tmp"]
-
-#CMD ["/bin/bash"]
-# For systemd usage this changes to /usr/sbin/init
-CMD ["/usr/sbin/init"]
+CMD ["/bin/bash"]
 
