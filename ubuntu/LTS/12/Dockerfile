@@ -23,7 +23,7 @@ RUN echo "===> Updating cache..." && \
     \
     \
     echo "===> Installing Ansible 1.9.2..." && \
-    pip install --upgrade ansible==1.9.2
+    pip install --upgrade ansible==1.9.2  && \
     \
     \
     echo "===> Adding hosts for convenience..."  && \
