@@ -13,6 +13,8 @@ elif [ "${OS_TYPE}" == "ubuntu_lts" ];then
     OS_PATH_PREFIX="ubuntu/LTS/${OS_VERSION}/"
 elif [ "${OS_TYPE}" == "ubuntu" ];then
     OS_PATH_PREFIX="ubuntu/${OS_VERSION}/"
+elif [ "${OS_TYPE}" == "fedora" ];then
+    OS_PATH_PREFIX="fedora/${OS_VERSION}/"
 else
     echo "unsupported OS_TYPE: ${OS_TYPE}"
     exit 126
