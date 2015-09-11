@@ -21,12 +21,4 @@ services:
 script:
   # Run tests
   - tests/runtests.sh ${OS_TYPE} ${OS_VERSION}
-#  # Run tests on Ubuntu 12
-#  - docker build -t test_weldpua2008/ubuntu_12.04 ubuntu/LTS/12/
-#  #;docker run --rm=true test_weldpua2008/ubuntu_12.04 /bin/bash -c "ansible --version"
-#  # Run tests on Ubuntu 14
-#  - docker build -t test_weldpua2008/ubuntu_14.04 ubuntu/LTS/14/
-##  # Run tests on CentOS6
-#  - docker build -t test_weldpua2008/centos6 centos/6
-##  # Run tests on CentOS7
-#  - docker build -t test_weldpua2008/centos7 centos/7
+
