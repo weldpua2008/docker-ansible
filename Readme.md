@@ -1,4 +1,4 @@
-[![badge](http://dockeri.co/image/weldpua2008/docker-ansible/)](https://hub.docker.com/r/weldpua2008/docker-ansible/)
+[![dockeri.co](http://dockeri.co/image/weldpua2008/docker-ansible)](https://hub.docker.com/r/weldpua2008/docker-ansible/)
 [![Build Status](https://travis-ci.org/weldpua2008/docker-ansible.svg?branch=ansible_1.9.2)](https://travis-ci.org/weldpua2008/docker-ansible)
 docker-ansible
 ===================
@@ -7,6 +7,11 @@ These are base docker images that include Ansible.
 Ansible, Inc maintains these images so that people can easily build docker images from ansible playbooks.
 
 While Ansible modules can help you deploy container images (and also prepare host dependencies to be able to run containers), this document is about how to use ansible to efficiently describe and build them as well.
+
+Requirements
+=====================================
+
+* docker
 
 Obtaining these Images from DockerHub
 =====================================
@@ -26,6 +31,14 @@ The following options are available:
     FROM weldpua2008/docker-ansible:`centos7`_v`1.9.2`
     
 This images on DockerHub will be updated periodically.
+
+Disclaimer
+=============================
+
+This is currently a work in progress, I am not responsible and shall not
+be held responsible in any manner if this tool causes loss of data, hardware
+faults, act of gods, invocation of old or ancient ones, elder gods and other
+horrors from the depths.
 
 Questions?
 ==========
