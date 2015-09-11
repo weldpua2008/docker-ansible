@@ -1,8 +1,11 @@
 language: python
 sudo: required
 branches:
-  only:
-  - v1.9.2
+  # blacklist
+  except:
+    - master
+#  only:
+#  - ansible_1.9.2
 
 services:
   - docker
