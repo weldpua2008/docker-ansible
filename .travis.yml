@@ -1,12 +1,13 @@
+language: python
 sudo: required
 branches:
   only:
   - v1.9.2
 
-  services:
+services:
   - docker
 
-  script:
+script:
   # Run tests on Ubuntu 12
   - docker build -t test_weldpua2008/ubuntu_12.04 ubuntu/LTS/12/;docker run --rm=true test_weldpua2008/ubuntu_12.04 /bin/bash -c "ansible --version"
   # Run tests on Ubuntu 14
