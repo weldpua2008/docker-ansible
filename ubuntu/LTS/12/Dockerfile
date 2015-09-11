@@ -14,8 +14,6 @@ RUN echo "===> Updating cache..." && \
     apt-get install python-apt -y -q && \
     apt-get install python-setuptools -y && \
     apt-get install    build-essential -y && \
-    apt-get install ansible -y && \
-    apt-get remove ansible --purge  -y && \
     apt-get install python-dev python2.7-dev python-pip -y && \
     apt-get install --reinstall python-pkg-resources -y && \
     easy_install --upgrade pip && \
@@ -29,5 +27,9 @@ RUN echo "===> Updating cache..." && \
     echo "===> Adding hosts for convenience..."  && \
     mkdir -p /etc/ansible && \
     echo '[local]\nlocalhost\n' > /etc/ansible/hosts
+
+#    apt-get install ansible -y && \
+#    apt-get remove ansible --purge  -y && \
+
 
 CMD ["/bin/bash"]
