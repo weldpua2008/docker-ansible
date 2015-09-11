@@ -21,6 +21,7 @@ TEMP_DOCKER_IMAGE_NAME="test_weldpua2008/${OS_TYPE}_${OS_VERSION}"
 
 
 echo ${PWD}
-ls -la
+ls -la ${OS_PATH_PREFIX}
+echo "docker build -t ${TEMP_DOCKER_IMAGE_NAME} ${OS_PATH_PREFIX}"
 #cd ..
 docker build -t ${TEMP_DOCKER_IMAGE_NAME} ${OS_PATH_PREFIX}&& docker run --rm=true ${TEMP_DOCKER_IMAGE_NAME} /bin/bash -c "ansible --version" || echo "failed" && exit 127
