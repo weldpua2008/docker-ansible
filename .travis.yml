@@ -5,9 +5,11 @@ env:
   #matrix:
   - ANSIBLE_VERSION=1.9.2
 branches:
-  only:
-  - v1.9.2
-  - master
+  # blacklist
+  except:
+    - master
+#  only:
+#  - ansible_1.9.2
 
 services:
   - docker
