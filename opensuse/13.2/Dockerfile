@@ -37,8 +37,10 @@ RUN echo "===> Update cache..."		  && \
     \
     \
     echo "===> Installing Ansible v1.9.2..."   && \
-    pip install --upgrade ansible==1.9.2 &&\
-    pip install --upgrade ansible==1.9.2
+    pip install --upgrade ansible
+
+    #pip install --upgrade ansible==1.9.2 &&\
+    #pip install --upgrade ansible==1.9.2
     # rm -Rf ~/.pip/cache/
 
 
