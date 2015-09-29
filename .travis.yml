@@ -9,6 +9,9 @@ env:
   - OS_TYPE=ubuntu_lts OS_VERSION=14
   - OS_TYPE=fedora OS_VERSION=22
   - OS_TYPE=opensuse OS_VERSION=13.2
+  - OS_TYPE=alpine OS_VERSION=3.2
+  - OS_TYPE=debian OS_VERSION=8
+  - OS_TYPE=debian OS_VERSION=7
 
 branches:
   # blacklist

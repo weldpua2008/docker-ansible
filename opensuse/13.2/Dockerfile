@@ -40,7 +40,4 @@ RUN echo "===> Update cache..."		  && \
      rm -Rf ~/.pip/cache/
 
 
-# Environment for systemd
-#ENV container=docker
-
 CMD ["/bin/bash"]
