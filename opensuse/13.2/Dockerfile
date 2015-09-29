@@ -15,8 +15,14 @@ RUN echo "===> Update cache..."		  && \
     zypper --non-interactive install python python-devel python-pip gcc libyaml-devel && \
     \
     \
-    pip install --upgrade pip && \
-
+    echo "===> Adding hosts for convenience..."    && \
+    mkdir -p /etc/ansible                          && \
+    echo '[local]\nlocalhost\n' > /etc/ansible/hosts &&\
+    \
+    \
+    echo "===> Installing Ansible v1.9.2..."   && \
+    pip install --upgrade ansible==1.9.2 &&\
+    \
     \
     \
     echo "===> Installing Sudo..."     && \
@@ -28,20 +34,10 @@ RUN echo "===> Update cache..."		  && \
     \
     \
     echo "===> zypper clean..."     && \
-    zypper clean -a                                 && \
+    zypper clean -a && \
     \
     \
-    echo "===> Adding hosts for convenience..."    && \
-    mkdir -p /etc/ansible                          && \
-    echo '[local]\nlocalhost\n' > /etc/ansible/hosts &&\
-    \
-    \
-    echo "===> Installing Ansible v1.9.2..."   && \
-    pip install --upgrade ansible
-
-    #pip install --upgrade ansible==1.9.2 &&\
-    #pip install --upgrade ansible==1.9.2
-    # rm -Rf ~/.pip/cache/
+     rm -Rf ~/.pip/cache/
 
 
 # Environment for systemd

@@ -24,3 +24,5 @@ script:
   # Run tests
   - tests/runtests.sh ${OS_TYPE} ${OS_VERSION}
 
+notifications:
+  email: false
