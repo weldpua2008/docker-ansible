@@ -15,7 +15,10 @@ elif [ "${OS_TYPE}" == "ubuntu" ];then
     OS_PATH_PREFIX="ubuntu/${OS_VERSION}/"
 elif [ "${OS_TYPE}" == "fedora" ];then
     OS_PATH_PREFIX="fedora/${OS_VERSION}/"
+elif [ "${OS_TYPE}" == "opensuse" ];then
+    OS_PATH_PREFIX="opensuse/${OS_VERSION}/"
 else
+    #if [ ! -d  "${OS_TYPE}/${OS_VERSION}/ ];then
     echo "unsupported OS_TYPE: ${OS_TYPE}"
     exit 126
 fi
@@ -24,6 +27,6 @@ TEMP_DOCKER_IMAGE_NAME="test_weldpua2008/${OS_TYPE}_${OS_VERSION}"
 
 echo ${PWD}
 ls -la ${OS_PATH_PREFIX}
-echo "docker build -t ${TEMP_DOCKER_IMAGE_NAME} ${OS_PATH_PREFIX} && docker run ${TEMP_DOCKER_IMAGE_NAME} /bin/bash"
+echo "docker build -t ${TEMP_DOCKER_IMAGE_NAME} ${OS_PATH_PREFIX} && docker run ${TEMP_DOCKER_IMAGE_NAME} ansible --version"
 #cd ..
 docker build -t ${TEMP_DOCKER_IMAGE_NAME} ${OS_PATH_PREFIX}&& docker run ${TEMP_DOCKER_IMAGE_NAME} /bin/bash -c "ansible --version" && echo "success" && exit 0 || echo "failed" && exit 127

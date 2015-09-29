@@ -16,7 +16,7 @@ Requirements
 Obtaining these Images from DockerHub
 =====================================
 
-Ansible, Inc content on DockerHub lives at https://hub.docker.com/r/weldpua2008/docker-ansible/
+This content on DockerHub lives at https://hub.docker.com/r/weldpua2008/docker-ansible/
 
 There are images available currently for CentOS and Ubuntu, using both the latest
 stable version of Ansible.
