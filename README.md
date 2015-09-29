@@ -29,10 +29,19 @@ The DockerFile shown above selected the latest CentOS tag of Ansible's Docker im
 The first line of the DockerFile can be changed to select another base operating system or Ansible version should you wish to use a different OS or different Ansible version.
 The following options are available:
 
+    FROM weldpua2008/docker-ansible:`alpine3.2`_v`1.9.2`
+
     FROM weldpua2008/docker-ansible:`centos6`_v`1.9.2`
     FROM weldpua2008/docker-ansible:`centos7`_v`1.9.2`
+    
     FROM weldpua2008/docker-ansible:`ubuntu12.04`_v`1.9.2`
     FROM weldpua2008/docker-ansible:`ubuntu14.04`_v`1.9.2`
+    FROM weldpua2008/docker-ansible:`ubuntu_lts12`_v`1.9.2`
+    FROM weldpua2008/docker-ansible:`ubuntu_lts14`_v`1.9.2`
+
+    FROM weldpua2008/docker-ansible:`debin7`_v`1.9.2`
+    FROM weldpua2008/docker-ansible:`debin8`_v`1.9.2`
+
     FROM weldpua2008/docker-ansible:`fedora22`_v`1.9.2`
     
 This images on DockerHub will be updated periodically.
