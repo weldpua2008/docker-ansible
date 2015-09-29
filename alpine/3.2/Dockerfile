@@ -23,4 +23,5 @@ RUN echo "===> Adding Python runtime..."  && \
     mkdir -p /etc/ansible                        && \
     echo '[local]\nlocalhost\n' > /etc/ansible/hosts
 
-CMD ["/bin/bash"]
+#CMD ["/bin/bash"]
+CMD [ "ansible-playbook", "--version" ]
