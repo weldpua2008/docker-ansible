@@ -10,7 +10,7 @@ RUN yum -y install wget && \
     rm -f epel-release-5-4.noarch.rpm && \
     yum update -y && \
     yum install -y curl wget && \
-    wget https://raw.githubusercontent.com/weldpua2008/python-2.7.x-on-Centos-5.x/master/install_python27.sh -O - | bash && \
+    wget --no-check-certificate https://raw.githubusercontent.com/weldpua2008/python-2.7.x-on-Centos-5.x/master/install_python27.sh -O - | bash && \
 
     pip2.7 install ansible==1.9.2 && \
     yum clean all && \
