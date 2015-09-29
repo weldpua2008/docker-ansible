@@ -7,9 +7,12 @@ MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
 RUN yum -y install wget && \
     wget dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm && \
     rpm -ivh epel-release-5-4.noarch.rpm && \
-    rm epel-release-5-4.noarch.rpm && \
+    rm -f epel-release-5-4.noarch.rpm && \
     yum update -y && \
-    yum install -y python python-pip python-devel gcc libyaml-devel && \
+    yum install -y curl python python-devel gcc libyaml-devel  python-setuptools && \
+    yum install -y python26-tools python26-libs python26-crypto python26-backports python26-argparse python26 python26-devel && \
+    wget https://bitbucket.org/pypa/setuptools/raw/0.8/ez_setup.py && \
+    easy_install-2.6 pip && \
     pip install ansible==1.9.2 && \
     yum clean all && \
     rm -Rf ~/.pip/cache/
