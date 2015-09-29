@@ -3,7 +3,7 @@ python: '2.7'
 sudo: required
 env:
   #matrix:
-  - OS_TYPE=centos OS_VERSION=5
+#  - OS_TYPE=centos OS_VERSION=5
   - OS_TYPE=centos OS_VERSION=6
   - OS_TYPE=centos OS_VERSION=7
   - OS_TYPE=ubuntu_lts OS_VERSION=12

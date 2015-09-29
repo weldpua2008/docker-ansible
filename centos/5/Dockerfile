@@ -11,8 +11,10 @@ RUN yum -y install wget && \
     yum update -y && \
     yum install -y curl python python-devel gcc libyaml-devel  python-setuptools && \
     yum install -y python26-tools python26-libs python26-crypto python26-backports python26-argparse python26 python26-devel && \
-    wget https://bitbucket.org/pypa/setuptools/raw/0.8/ez_setup.py && \
+    wget https://bitbucket.org/pypa/setuptools/raw/0.8/ez_setup.py  -O - | python2.6 && \
     easy_install-2.6 pip && \
     pip install ansible==1.9.2 && \
     yum clean all && \
     rm -Rf ~/.pip/cache/
+
+CMD [ "ansible", "--version" ]
