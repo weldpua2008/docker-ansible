@@ -1,5 +1,5 @@
 # Dockerfile for building Ansible image for OpenSuSe 13.2, with as few additional software as possible.
-FROM fedora:22
+FROM opensuse:13.2
 
 MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
 
