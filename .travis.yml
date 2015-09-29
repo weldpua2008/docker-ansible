@@ -8,6 +8,8 @@ env:
   - OS_TYPE=centos OS_VERSION=7
   - OS_TYPE=ubuntu_lts OS_VERSION=12
   - OS_TYPE=ubuntu_lts OS_VERSION=14
+  - OS_TYPE=ubuntu OS_VERSION=15.04
+  - OS_TYPE=ubuntu OS_VERSION=15.10
   - OS_TYPE=fedora OS_VERSION=21
   - OS_TYPE=fedora OS_VERSION=22
   - OS_TYPE=opensuse OS_VERSION=13.2

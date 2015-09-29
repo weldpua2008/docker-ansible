@@ -1,4 +1,4 @@
-# Dockerfile for building Ansible image for CentOS 7, with as few additional software as possible.
+# Dockerfile for building Ansible image for Ubuntu 12.04 (Precise LTS), with as few additional software as possible.
 FROM ubuntu:12.04
 
 MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
@@ -26,7 +26,8 @@ RUN echo "===> Updating cache..." && \
     \
     echo "===> Adding hosts for convenience..."  && \
     mkdir -p /etc/ansible && \
-    echo '[local]\nlocalhost\n' > /etc/ansible/hosts
+    echo '[local]\nlocalhost\n' > /etc/ansible/hosts && \
+    apt-get clean
 
 #    apt-get install ansible -y && \
 #    apt-get remove ansible --purge  -y && \
