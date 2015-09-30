@@ -20,8 +20,7 @@ Obtaining these Images from DockerHub
 
 This content on DockerHub lives at https://hub.docker.com/r/weldpua2008/docker-ansible/
 
-There are images available currently for CentOS and Ubuntu, using both the latest
-stable version of Ansible.
+There are images available currently for Fedora, Oracle Linux, CentOS, Gentoo, Alpine, Debian and Ubuntu, using the 1.9.2 version of Ansible.
 
 Selecting Versions of Ansible
 =============================

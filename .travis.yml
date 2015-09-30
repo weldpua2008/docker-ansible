@@ -17,6 +17,7 @@ env:
   - OS_TYPE=alpine OS_VERSION=3.2
   - OS_TYPE=debian OS_VERSION=8
   - OS_TYPE=debian OS_VERSION=7
+  - OS_TYPE=gentoo OS_VERSION=stage3-amd64
 
 branches:
   # blacklist
