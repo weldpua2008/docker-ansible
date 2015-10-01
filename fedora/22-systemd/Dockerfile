@@ -1,5 +1,5 @@
-# Dockerfile for building Ansible image for FedoraCore 21, with as few additional software as possible.
-FROM fedora:21
+# Dockerfile for building Ansible image for FedoraCore 22 with SystemD, with as few additional software as possible.
+FROM fedora:22
 
 MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
 
@@ -9,6 +9,17 @@ MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
 RUN echo "===> Update cache..."		  && \
      yum -y update                        && \
 
+    \
+    \
+    yum -y install systemd; yum clean all; && \
+    (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
+    rm -f /lib/systemd/system/multi-user.target.wants/*;\
+    rm -f /etc/systemd/system/*.wants/*;\
+    rm -f /lib/systemd/system/local-fs.target.wants/*; \
+    rm -f /lib/systemd/system/sockets.target.wants/*udev*; \
+    rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
+    rm -f /lib/systemd/system/basic.target.wants/*;\
+    rm -f /lib/systemd/system/anaconda.target.wants/*;  \
     \
     \
     echo "===> Update cache..."           && \
@@ -40,6 +51,7 @@ RUN echo "===> Update cache..."		  && \
     pip install --upgrade ansible==1.9.2 &&\
     pip install --upgrade ansible==1.9.2
 
+VOLUME [ "/sys/fs/cgroup", "/run", "/tmp"]
 
 # Environment for systemd
 ENV container=docker
