@@ -31,7 +31,7 @@ services:
 
 script:
   # Run tests
-  - tests/runtests.sh ${OS_TYPE} ${OS_VERSION}
+  - travis_wait tests/runtests.sh ${OS_TYPE} ${OS_VERSION}
 
 notifications:
   email: false

@@ -14,7 +14,7 @@ RUN echo "===> Update cache..."		                                    && \
     \
     \
     echo "===> Installing dev-python/pip..."                            && \
-    emerge --color=n --nospinner dev-python/pip                      && \
+    emerge --color=n --nospinner dev-python/pip                         && \
     \
     \
     \
@@ -32,14 +32,16 @@ RUN echo "===> Update cache..."		                                    && \
     \
     \
     echo "====> Cleaning space"                                         && \
-    rm -r /root/.bash_history &> /dev/null                              && \
-    rm -r /tmp/* &> /dev/null                                           && \
-    rm -r /usr/portage &> /dev/null                                     && \
-    rm -r /usr/share/doc &> /dev/null                                   && \
-    rm -r /usr/share/man/?? &> /dev/null                                && \
-    rm -r /usr/share/man/??_* &> /dev/null                              && \
-    rm -r /var/tmp/* &> /dev/null                                       && \
-    rm -r /var/log/* &> /dev/null
+    rm -rf /root/.bash_history                               && \
+    rm -rf /tmp/*                                            && \
+    rm -rf /usr/portage                                      && \
+    rm -rf /usr/share/doc                                    && \
+    rm -rf /usr/share/man/??                                 && \
+    rm -rf /usr/share/man/??_*                               && \
+    rm -rf /var/tmp/*                                        && \
+    rm -rf /var/log/*                                        && \
+    echo "Done"
+
 #&& \
 #    ansible --version
 
