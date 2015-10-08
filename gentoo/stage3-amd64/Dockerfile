@@ -5,16 +5,16 @@ MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
 
 
 RUN echo "===> Update cache..."		                                    && \
-    emerge-webrsync -q                                                  && \
+    emerge-webrsync                                                   && \
 
     \
     \
     echo "===> Installing Sudo..."                                      && \
-    USE="-minimal" emerge --color=n --nospinner -q sudo                                && \
+    USE="-minimal" emerge --color=n --nospinner sudo                                && \
     \
     \
     echo "===> Installing dev-python/pip..."                            && \
-    emerge --color=n --nospinner -q dev-python/pip                      && \
+    emerge --color=n --nospinner dev-python/pip                      && \
     \
     \
     \
@@ -39,8 +39,9 @@ RUN echo "===> Update cache..."		                                    && \
     rm -r /usr/share/man/?? &> /dev/null                                && \
     rm -r /usr/share/man/??_* &> /dev/null                              && \
     rm -r /var/tmp/* &> /dev/null                                       && \
-    rm -r /var/log/* &> /dev/null                                       && \
-    ansible --version
+    rm -r /var/log/* &> /dev/null
+#&& \
+#    ansible --version
 
 #    emerge app-portage/gentoolkit               && \
 #    eclean distfiles                            && \
