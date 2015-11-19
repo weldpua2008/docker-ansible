@@ -8,6 +8,7 @@ docker-ansible
 ===================
 These are base docker images that include Ansible versions:
 * 1.9.2 [![Ansible 1.9.2 Build Status](https://travis-ci.org/weldpua2008/docker-ansible.svg?branch=ansible_1.9.2)](https://travis-ci.org/weldpua2008/docker-ansible)
+* 1.9.3 [![Ansible 1.9.3 Build Status](https://travis-ci.org/weldpua2008/docker-ansible.svg?branch=ansible_1.9.3)](https://travis-ci.org/weldpua2008/docker-ansible)
 
 The following OS are aviable
 =============================
