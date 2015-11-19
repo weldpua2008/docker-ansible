@@ -23,8 +23,6 @@ branches:
   # blacklist
   except:
     - master
-#  only:
-#  - ansible_1.9.2
 
 services:
   - docker

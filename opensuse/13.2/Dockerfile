@@ -20,8 +20,8 @@ RUN echo "===> Update cache..."		  && \
     echo '[local]\nlocalhost\n' > /etc/ansible/hosts &&\
     \
     \
-    echo "===> Installing Ansible v1.9.2..."   && \
-    pip install --upgrade ansible==1.9.2 &&\
+    echo "===> Installing Ansible v1.9.3..."   && \
+    pip install --upgrade ansible==1.9.3 && \
     \
     \
     \
