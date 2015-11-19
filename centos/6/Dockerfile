@@ -54,7 +54,8 @@ RUN echo "===> Update cache..."		  && \
     echo "===> Installing Ansible v1.9.3..."   && \
     pip install --upgrade ansible==1.9.3 &&\
     yum erase -y python-paramiko python-crypto;yum install -y python-paramiko python-crypto &&\
-    pip install --upgrade ansible==1.9.3
+    pip install --upgrade ansible==1.9.3 && \
+    yum erase python-keyczar python-crypto pyasn1 -y
 
 # default command: display Ansible version
 #CMD [ "ansible-playbook", "--version" ]
