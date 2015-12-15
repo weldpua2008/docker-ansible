@@ -1,8 +1,8 @@
-# Dockerfile for building Ansible image for CentOS 5, with as few additional software as possible.
-
-FROM centos:5
+# Dockerfile for building Ansible image for Oracle Linux 6, with as few additional software as possible.
+FROM oraclelinux:5
 
 MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
+
 
 RUN yum -y install wget && \
     wget dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm && \
@@ -18,3 +18,5 @@ RUN yum -y install wget && \
     find /opt/ -type f -name "ansible*"   -exec ln -s {} /usr/bin/  \;
 
 CMD [ "ansible", "--version" ]
+
+

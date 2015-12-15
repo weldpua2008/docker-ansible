@@ -20,8 +20,8 @@ RUN echo "===> Updating cache..." && \
     easy_install --upgrade ansible && \
     \
     \
-    echo "===> Installing Ansible 1.9.3..." && \
-    pip install --upgrade ansible==1.9.3  && \
+    echo "===> Installing Ansible 1.9.4..." && \
+    pip install --upgrade ansible==1.9.4  && \
     \
     \
     echo "===> Adding hosts for convenience..."  && \

@@ -10,8 +10,8 @@ RUN echo "===> Adding Python runtime..."  && \
     pip install --upgrade pip                                            && \
     \
     \
-    echo "===> Installing Ansible...1.9.3"  && \
-    pip install ansible==1.9.3              && \
+    echo "===> Installing Ansible...1.9.4"  && \
+    pip install ansible==1.9.4              && \
     \
     \
     echo "===> Removing package list..."  && \

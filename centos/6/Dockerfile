@@ -51,10 +51,10 @@ RUN echo "===> Update cache..."		  && \
     echo '[local]\nlocalhost\n' > /etc/ansible/hosts &&\
     \
     \
-    echo "===> Installing Ansible v1.9.3..."   && \
-    pip install --upgrade ansible==1.9.3 &&\
+    echo "===> Installing Ansible v1.9.4..."   && \
+    pip install --upgrade ansible==1.9.4 &&\
     yum erase -y python-paramiko python-crypto;yum install -y python-paramiko python-crypto &&\
-    pip install --upgrade ansible==1.9.3 && \
+    pip install --upgrade ansible==1.9.4 && \
     yum erase python-keyczar python-crypto pyasn1 -y
 
 # default command: display Ansible version
