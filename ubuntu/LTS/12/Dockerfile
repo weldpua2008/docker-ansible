@@ -17,7 +17,6 @@ RUN echo "===> Updating cache..." && \
     apt-get install python-dev python2.7-dev python-pip -y && \
     apt-get install --reinstall python-pkg-resources -y && \
     easy_install --upgrade pip && \
-    easy_install --upgrade ansible && \
     \
     \
     echo "===> Installing Ansible 2.0.1.0..." && \
