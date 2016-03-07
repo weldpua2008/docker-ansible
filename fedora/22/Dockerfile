@@ -6,14 +6,9 @@ MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
 
 
 
-RUN echo "===> Update cache..."		  && \
-     yum -y update                        && \
-
-    \
-    \
-    echo "===> Update cache..."           && \
-    yum -y update                        && \
-    yum -y install PyYAML python-jinja2 python-httplib2 python-keyczar python-paramiko python-setuptools git python-pip && \
+RUN echo "===> Update cache..."           && \
+    dnf -y update                        && \
+    dnf -y install PyYAML python-jinja2 python-httplib2 python-keyczar python-paramiko python-setuptools git python-pip && \
     \
     \
     pip install --upgrade pip && \
@@ -21,14 +16,14 @@ RUN echo "===> Update cache..."		  && \
     \
     \
     echo "===> Installing Sudo..."     && \
-    yum -y install  sudo           && \
+    dnf -y install  sudo           && \
     \
     \
     echo "===> Disabling sudo 'requiretty' setting..."    && \
     sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers   && \
     \
     \
-    yum clean all                                  && \
+    dnf clean all                                  && \
     \
     \
     echo "===> Adding hosts for convenience..."    && \
