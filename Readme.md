@@ -7,6 +7,7 @@
 docker-ansible
 ===================
 These are base docker images that include Ansible versions:
+* 2.0.1.0 [![Ansible 2.0.1.0 Build Status](https://travis-ci.org/weldpua2008/docker-ansible.svg?branch=ansible_2.0.1)](https://travis-ci.org/weldpua2008/docker-ansible)
 * 1.9.4 [![Ansible 1.9.4 Build Status](https://travis-ci.org/weldpua2008/docker-ansible.svg?branch=ansible_1.9.4)](https://travis-ci.org/weldpua2008/docker-ansible)
 * 1.9.3 [![Ansible 1.9.3 Build Status](https://travis-ci.org/weldpua2008/docker-ansible.svg?branch=ansible_1.9.3)](https://travis-ci.org/weldpua2008/docker-ansible)
 * 1.9.2 [![Ansible 1.9.2 Build Status](https://travis-ci.org/weldpua2008/docker-ansible.svg?branch=ansible_1.9.2)](https://travis-ci.org/weldpua2008/docker-ansible)
@@ -51,9 +52,9 @@ The DockerFile shown above selected the CentOS tag of Ansible's Docker images.
 The first line of the DockerFile can be changed to select another base operating system or Ansible version should you wish to use a different OS or different Ansible version.
 FROM weldpua2008/docker-ansible:`Os``Os_Version`_v`Ansible_Version`
 
-Example with Centos 7 and Ansible 1.9.2
+Example with Centos 7 and Ansible 1.9.4
     
-    FROM weldpua2008/docker-ansible:`centos7`_v`1.9.2`
+    FROM weldpua2008/docker-ansible:`centos7`_v`1.9.4`
     
 This images on DockerHub will be updated periodically.
 
