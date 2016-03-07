@@ -47,9 +47,9 @@ RUN echo "===> Update cache..."		  && \
     echo '[local]\nlocalhost\n' > /etc/ansible/hosts &&\
     \
     \
-    echo "===> Installing Ansible v1.9.4..."   && \
-    pip install --upgrade ansible==1.9.4 &&\
-    pip install --upgrade ansible==1.9.4
+    echo "===> Installing Ansible v2.0.1.0..."   && \
+    pip install --upgrade ansible==2.0.1.0 &&\
+    pip install --upgrade ansible==2.0.1.0
 
 VOLUME [ "/sys/fs/cgroup", "/run", "/tmp"]
 

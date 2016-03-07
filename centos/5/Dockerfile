@@ -12,7 +12,7 @@ RUN yum -y install wget && \
     yum install -y curl wget && \
     wget --no-check-certificate https://raw.githubusercontent.com/weldpua2008/python-2.7.x-on-Centos-5.x/master/install_python27.sh -O - | bash && \
 
-    pip2.7 install ansible==1.9.4 && \
+    pip2.7 install ansible==2.0.1.0 && \
     yum clean all && \
     rm -Rf ~/.pip/cache/ && \
     find /opt/ -type f -name "ansible*"   -exec ln -s {} /usr/bin/  \;
