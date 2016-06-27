@@ -13,8 +13,8 @@ RUN echo "===> Installing python, sudo, and supporting tools..."  && \
         curl gcc python-pip python-dev  && \
     \
     \
-    echo "===> Installing Ansible 2.0.1.0..."   && \
-    pip install ansible==2.0.1.0                && \
+    echo "===> Installing Ansible 2.1.0.0..."   && \
+    pip install ansible==2.1.0.0               && \
     \
     \
     echo "===> Removing unused APT resources..."                       && \

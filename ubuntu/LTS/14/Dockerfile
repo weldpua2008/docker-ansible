@@ -14,8 +14,8 @@ RUN echo "===> Updating cache..." && \
     apt-get install python-apt -y -q && \
     \
     \
-    echo "===> Installing Ansible 2.0.1.0..." && \
-    pip install --upgrade ansible==2.0.1.0  && \
+    echo "===> Installing Ansible 2.1.0.0..." && \
+    pip install --upgrade ansible==2.1.0.0  && \
     \
     \
     echo "===> Adding hosts for convenience..."  && \

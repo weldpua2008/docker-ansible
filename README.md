@@ -2,7 +2,7 @@
 [![Docker Stars](https://img.shields.io/docker/stars/_/ubuntu.svg)](https://hub.docker.com/r/weldpua2008/docker-ansible/)
 [![dockeri.co](http://dockeri.co/image/weldpua2008/docker-ansible)](https://hub.docker.com/r/weldpua2008/docker-ansible/)
 
-[![Build Status](https://travis-ci.org/weldpua2008/docker-ansible.svg?branch=ansible_1.9.4)](https://travis-ci.org/weldpua2008/docker-ansible) [![GitHub issues](https://img.shields.io/github/issues/weldpua2008/docker-ansible.svg)](https://github.com/weldpua2008/docker-ansible/issues) [![GitHub forks](https://img.shields.io/github/forks/weldpua2008/docker-ansible.svg)](https://github.com/weldpua2008/docker-ansible/network) [![GitHub stars](https://img.shields.io/github/stars/weldpua2008/docker-ansible.svg)](https://github.com/weldpua2008/docker-ansible/stargazers) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/weldpua2008/docker-ansible/master/LICENSE) 
+[![Build Status](https://travis-ci.org/weldpua2008/docker-ansible.svg?branch=ansible_2.1.0.0)](https://travis-ci.org/weldpua2008/docker-ansible) [![GitHub issues](https://img.shields.io/github/issues/weldpua2008/docker-ansible.svg)](https://github.com/weldpua2008/docker-ansible/issues) [![GitHub forks](https://img.shields.io/github/forks/weldpua2008/docker-ansible.svg)](https://github.com/weldpua2008/docker-ansible/network) [![GitHub stars](https://img.shields.io/github/stars/weldpua2008/docker-ansible.svg)](https://github.com/weldpua2008/docker-ansible/stargazers) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/weldpua2008/docker-ansible/master/LICENSE) 
 
 docker-ansible
 ===================
@@ -22,7 +22,7 @@ Obtaining these Images from DockerHub
 
 This content on DockerHub lives at https://hub.docker.com/r/weldpua2008/docker-ansible/
 
-There are images available currently for Fedora, Oracle Linux, CentOS, Gentoo, Alpine, Debian and Ubuntu, using the 1.9.4 version of Ansible.
+There are images available currently for Fedora, Oracle Linux, CentOS, Gentoo, Alpine, Debian and Ubuntu, using the 2.1.0.0 version of Ansible.
 
 Selecting Versions of Ansible
 =============================
@@ -30,26 +30,30 @@ The DockerFile shown above selected the latest CentOS tag of Ansible's Docker im
 The first line of the DockerFile can be changed to select another base operating system or Ansible version should you wish to use a different OS or different Ansible version.
 The following options are available:
 
-    FROM weldpua2008/docker-ansible:`alpine3.2`_v`1.9.4`
+    FROM weldpua2008/docker-ansible:`alpine3.2`_v`2.1.0.0`
     
-    FROM weldpua2008/docker-ansible:`oraclelinux6`_v`1.9.4`
+    FROM weldpua2008/docker-ansible:`oraclelinux6`_v`2.1.0.0`
     
-    FROM weldpua2008/docker-ansible:`opensuse13.2`_v`1.9.4`
+    FROM weldpua2008/docker-ansible:`opensuse13.2`_v`2.1.0.0`
 
-    FROM weldpua2008/docker-ansible:`centos5`_v`1.9.4`
-    FROM weldpua2008/docker-ansible:`centos6`_v`1.9.4`
-    FROM weldpua2008/docker-ansible:`centos7`_v`1.9.4`
+    FROM weldpua2008/docker-ansible:`centos5`_v`2.1.0.0`
+    FROM weldpua2008/docker-ansible:`centos6`_v`2.1.0.0`
+    FROM weldpua2008/docker-ansible:`centos7`_v`2.1.0.0`
     
-    FROM weldpua2008/docker-ansible:`ubuntu12.04`_v`1.9.4`
-    FROM weldpua2008/docker-ansible:`ubuntu14.04`_v`1.9.4`
-    FROM weldpua2008/docker-ansible:`ubuntu_lts12`_v`1.9.4`
-    FROM weldpua2008/docker-ansible:`ubuntu_lts14`_v`1.9.4`
+    FROM weldpua2008/docker-ansible:`ubuntu12.04`_v`2.1.0.0`
+    FROM weldpua2008/docker-ansible:`ubuntu14.04`_v`2.1.0.0`
+    FROM weldpua2008/docker-ansible:`ubuntu16.04`_v`2.1.0.0`
 
-    FROM weldpua2008/docker-ansible:`debin7`_v`1.9.4`
-    FROM weldpua2008/docker-ansible:`debin8`_v`1.9.4`
+    FROM weldpua2008/docker-ansible:`ubuntu_lts12`_v`2.1.0.0`
+    FROM weldpua2008/docker-ansible:`ubuntu_lts14`_v`2.1.0.0`
+    FROM weldpua2008/docker-ansible:`ubuntu_lts16`_v`2.1.0.0`
 
-    FROM weldpua2008/docker-ansible:`fedora21`_v`1.9.4`
-    FROM weldpua2008/docker-ansible:`fedora22`_v`1.9.4`
+
+    FROM weldpua2008/docker-ansible:`debin7`_v`2.1.0.0`
+    FROM weldpua2008/docker-ansible:`debin8`_v`2.1.0.0`
+
+    FROM weldpua2008/docker-ansible:`fedora21`_v`2.1.0.0`
+    FROM weldpua2008/docker-ansible:`fedora22`_v`2.1.0.0`
     
 This images on DockerHub will be updated periodically.
 
