@@ -10,7 +10,7 @@ RUN echo "===> Updating cache..." && \
     apt-get install -y  sudo && \
     \
     \
-    apt-get install python-pip python-dev -y && \
+    apt-get install python-pip python-dev libssl-dev libffi-dev -y && \
     apt-get install python-apt -y -q && \
     apt-get install python-setuptools -y && \
     apt-get install    build-essential -y && \

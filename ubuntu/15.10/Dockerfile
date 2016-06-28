@@ -12,7 +12,7 @@ RUN echo "===> Updating cache..." && \
     apt-get install -y  sudo && \
     \
     \
-    apt-get install python python-pip python-dev -y && \
+    apt-get install python python-pip python-dev libssl-dev libffi-dev -y && \
     apt-get install python-apt libyaml-dev -y -q && \
     \
     \
