@@ -14,6 +14,7 @@ RUN echo "===> Installing python, sudo, and supporting tools..."  && \
         python python-yaml sudo             \
         curl gcc python-pip python-dev  &&  \
     \
+    apt-get install libssl-dev libffi-dev -y && \
     \
     echo "===> Installing Ansible 2.1.0.0 .."   && \
     pip install ansible==2.1.0.0                && \
