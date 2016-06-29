@@ -19,6 +19,7 @@ RUN echo "===> Update cache..."		  && \
     yum install -y libffi-devel  openssl-devel && \
     \
     \
+    yum -y groupinstall "Development Tools" "Development Libraries"  && \
     pip install --upgrade pip && \
 
     \

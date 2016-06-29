@@ -29,6 +29,7 @@ RUN echo "===> Update cache..."		  && \
     \
     dnf install -y libffi-devel  openssl-devel && \
     \
+    dnf -y install @development-tools && \
     \
     pip install --upgrade pip && \
 
