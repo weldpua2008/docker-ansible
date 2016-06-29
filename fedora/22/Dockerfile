@@ -19,6 +19,9 @@ RUN echo "===> Update cache..."           && \
     dnf -y install  sudo           && \
     \
     \
+    dnf -y install libffi-devel  openssl-devel && \
+    \
+    \
     echo "===> Disabling sudo 'requiretty' setting..."    && \
     sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers   && \
     \

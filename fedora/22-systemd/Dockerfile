@@ -27,6 +27,9 @@ RUN echo "===> Update cache..."		  && \
     dnf -y install PyYAML python-jinja2 python-httplib2 python-keyczar python-paramiko python-setuptools git python-pip && \
     \
     \
+    dnf install -y libffi-devel  openssl-devel && \
+    \
+    \
     pip install --upgrade pip && \
 
     \

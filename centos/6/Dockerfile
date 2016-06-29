@@ -26,6 +26,9 @@ RUN echo "===> Update cache..."		  && \
     yum install -y PyYAML libyaml python-babel python-crypto python-simplejson python-paramiko python-pip python-crypto python-httplib2  python-jinja2  python-keyczar python-pyasn1 python-devel && \
     \
     \
+    yum install -y libffi-devel  openssl-devel && \
+    \
+    \
     pip install --upgrade pip && \
 
 

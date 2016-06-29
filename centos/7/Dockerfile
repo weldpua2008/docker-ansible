@@ -22,6 +22,9 @@ RUN echo "===> Update cache..."		  && \
     yum -y install epel-release           && \
     \
     \
+    yum install -y libffi-devel  openssl-devel && \
+    \
+    \
     yum install -y PyYAML libyaml python-babel python-crypto python-simplejson python-paramiko python-pip python-crypto python-httplib2  python-jinja2  python-keyczar python-pyasn1 python-devel && \
     \
     \
