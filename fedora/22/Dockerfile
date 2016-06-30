@@ -11,6 +11,8 @@ RUN echo "===> Update cache..."           && \
     dnf -y install PyYAML python-jinja2 python-httplib2 python-keyczar python-paramiko python-setuptools git python-pip && \
     \
     \
+    dnf -y install @development-tools && \
+    \
     pip install --upgrade pip && \
 
     \
@@ -21,7 +23,7 @@ RUN echo "===> Update cache..."           && \
     \
     dnf -y install libffi-devel  openssl-devel && \
     \
-    dnf -y install @development-tools && \
+    dnf -y install python-devel && \
     \
     echo "===> Disabling sudo 'requiretty' setting..."    && \
     sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers   && \

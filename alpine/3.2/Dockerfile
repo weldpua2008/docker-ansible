@@ -5,10 +5,11 @@ FROM alpine:3.2
 MAINTAINER Valeriy Solovyov <weldpua2008@gmail.com>
 
 RUN echo "===> Adding Python runtime..."  && \
-    apk --update add python py-pip openssl ca-certificates               && \
-    apk --update add --virtual build-dependencies python-dev build-base  && \
-    apk add --update build-base libffi-dev                               && \
-    pip install --upgrade pip                                            && \
+    apk --update add python py-pip openssl ca-certificates                && \
+    apk --update add --virtual build-dependencies python-dev build-base   && \
+    apk add --update build-base libffi-dev                                && \
+    apk add openssl-dev                                                   && \
+    pip install --upgrade pip                                             && \
     \
     \
     echo "===> Installing Ansible...2.1.0.0"  && \

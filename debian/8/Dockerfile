@@ -11,10 +11,12 @@ RUN echo "===> Installing python, sudo, and supporting tools..."  && \
     apt-get update  && \
     DEBIAN_FRONTEND=noninteractive          \
     apt-get install -y                      \
-        python python-yaml sudo             \
+        python python-yaml sudo              \
         curl gcc python-pip python-dev  &&  \
     \
-    apt-get install libssl-dev libffi-dev -y && \
+    apt-get install libssl-dev libffi-dev python-setuptools -y && \
+    \
+    pip install --upgrade cffi
     \
     echo "===> Installing Ansible 2.1.0.0 .."   && \
     pip install ansible==2.1.0.0                && \
