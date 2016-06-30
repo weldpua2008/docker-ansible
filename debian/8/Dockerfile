@@ -16,7 +16,7 @@ RUN echo "===> Installing python, sudo, and supporting tools..."  && \
     \
     apt-get install libssl-dev libffi-dev python-setuptools -y && \
     \
-    pip install --upgrade cffi
+    pip install --upgrade cffi && \
     \
     echo "===> Installing Ansible 2.1.0.0 .."   && \
     pip install ansible==2.1.0.0                && \
