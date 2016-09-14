@@ -27,8 +27,8 @@ RUN echo "===> Update cache..."		                                    && \
     echo '[local]\nlocalhost\n' > /etc/ansible/hosts                    &&\
     \
     \
-    echo "===> Installing Ansible v2.1.0.0..."                            && \
-    pip2.7 install ansible==2.1.0.0                                       && \
+    echo "===> Installing Ansible vv2.1.1.0-1..."                            && \
+    pip2.7 install ansible==v2.1.1.0-1                                       && \
     \
     \
     echo "====> Cleaning space"                                         && \

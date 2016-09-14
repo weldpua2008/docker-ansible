@@ -53,10 +53,10 @@ RUN echo "===> Update cache..."		  && \
     echo '[local]\nlocalhost\n' > /etc/ansible/hosts &&\
     \
     \
-    echo "===> Installing Ansible v2.1.0.0..."   && \
-    pip install --upgrade ansible==2.1.0.0 &&\
+    echo "===> Installing Ansible vv2.1.1.0-1..."   && \
+    pip install --upgrade ansible==v2.1.1.0-1 &&\
     yum erase -y python-paramiko python-crypto;yum install -y python-paramiko python-crypto &&\
-    pip install --upgrade ansible==2.1.0.0
+    pip install --upgrade ansible==v2.1.1.0-1
 
 
 # Environment for systemd

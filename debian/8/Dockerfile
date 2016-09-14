@@ -18,8 +18,8 @@ RUN echo "===> Installing python, sudo, and supporting tools..."  && \
     \
     pip install --upgrade cffi && \
     \
-    echo "===> Installing Ansible 2.1.0.0 .."   && \
-    pip install ansible==2.1.0.0                && \
+    echo "===> Installing Ansible v2.1.1.0-1 .."   && \
+    pip install ansible==v2.1.1.0-1                && \
     \
     \
     echo "===> Removing unused APT resources..."                       && \
