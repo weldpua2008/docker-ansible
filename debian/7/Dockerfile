@@ -15,8 +15,8 @@ RUN echo "===> Installing python, sudo, and supporting tools..."  && \
 
     \
     \
-    echo "===> Installing Ansible v2.1.1.0-1..."   && \
-    pip install ansible==v2.1.1.0-1               && \
+    echo "===> Installing Ansible 2.1.1.0..."   && \
+    pip install ansible==2.1.1.0               && \
     \
     \
     echo "===> Removing unused APT resources..."                       && \

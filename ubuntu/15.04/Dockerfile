@@ -16,8 +16,8 @@ RUN echo "===> Updating cache..." && \
     apt-get install python-apt libyaml-dev -y -q && \
     \
     \
-    echo "===> Installing Ansible v2.1.1.0-1..." && \
-    pip install --upgrade ansible==v2.1.1.0-1  && \
+    echo "===> Installing Ansible 2.1.1.0..." && \
+    pip install --upgrade ansible==2.1.1.0  && \
     \
     \
     echo "===> Adding hosts for convenience..."  && \
